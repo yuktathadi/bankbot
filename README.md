@@ -12,6 +12,4 @@ Various files that are required:
 -app.py
 
 
-In order to run the codes,
-
-Run the train.py script to start training the model. A file called chatbot_model.h5 will be created. The model that the Flask REST API will use to provide responses without requiring retraining is contained in this file. After executing train.py, run app.py to start and initialize the chatbot. You can add more terms and vocabulary to the bot's understanding by editing the intents.json file, adding your own customized words, and then retraining the model.
+Run the "training.py" script to start the model's training process. The result of this is a file called "chatbot_modell.h5," which functions as a model so that the Flask REST API can respond to requests without requiring retraining. Start and initialize the bankbot by launching "mainappl.py" after "training.py" has been executed. You can improve the bot's understanding by making changes to the "intentsfile.json" file, adding new patterns and phrases, and then retraining the model.
