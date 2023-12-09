@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='webformat.css')}}" />
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+body
+{
+
+background-image:url({{url_for('static',filename='mlbg2.jpeg')}})
+}
+
+.form-wrapper
+{
+position:absolute;
+background-size=cover;
+width:700px;
+height:450px;
+
+top:0%;
+right:1%;
+
+
+padding:8px;
+
+obacity:0.7;
+}
+</style>
+
+<body>
+<h1><marquee>WELCOME TO BANKBOT. YOUR ONE STOP BANK QUERY RESOLVER!</marquee></h1>
+
+	<!--<img src="{{url_for('static',filename='mlbg2.jpeg')}}" alt="" height="900" width="1200">-->
+    <div class="row">
+            
+    <form>
+	<div class="form-wrapper">
+        <div id="chatbox">
+            <div class="col-md-8 ml-auto mr-auto">
+                <p class="botText"><span>Hi, my name is Bankbot, how may I help you today?</span></p>
+            </div>
+        </div>
+        <div id="userInput" class="row">
+            <div class="col-md-8">
+                <input id="text" type="text" name="msg" placeholder="start your Chat here" class="form-control">
+                <button type="submit" id="send" class="btn btn-warning">SUBMIT</button>
+            </div>
+        </div>
+		</div>
+    </form>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("form").on("submit", function(event) {
+            var rawText = $("#text").val();
+            var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+            $("#text").val("");
+            $("#chatbox").append(userHtml);
+            document.getElementById("userInput").scrollIntoView({
+                block: "start",
+                behavior: "smooth",
+            });
+            $.ajax({
+                data: {
+                    msg: rawText,
+                },
+                type: "POST",
+                url: "/get",
+            }).done(function(data) {
+                var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                $("#chatbox").append($.parseHTML(botHtml));
+                document.getElementById("userInput").scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
+            });
+            event.preventDefault();
+        });
+    });
+</script>
+</body>
+
+</html>

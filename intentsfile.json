@@ -1,0 +1,132 @@
+	{
+    "intents": [{
+		
+		
+            "tag": "greetings",
+            "patterns": ["hi there", "hello","hi", "hey", "hola", "hello"],
+            "responses": ["Hi, thanks for reaching out. How can I help you?        "],
+            "context": [""]
+        },
+        {
+            "tag": "checkaccount",
+            "patterns": ["I want to open a checking account, what docs do I need","what docs do I need to open a checking account","what documents do I need to open a checking account"],
+            "responses": ["Following are the documents required to open a Checking Account: 1: Government issued ID proof 2: Proof of address 3: Social Securiy Number or Taxpayer Identification Number  ** This is only indicative list. Please visit your nearest bank for further details. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "saveaccount",
+            "patterns": ["I want to open a savings account","what docs do I need to open a savings account","what documents do I need to open a savings account"],
+            "responses": ["Following are the documents required to open a Savings Account: 1: Government issued ID proof 2: Proof of address 3: Social Securiy Number or Taxpayer Identification Number  ** This is only indicative list. Please visit your nearest bank for further details. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "investaccount",
+            "patterns": ["what diff investment accounts or offers are available for kids to open an account","what different investment accounts are available for kids","I want to open an investment account for kids" ],
+            "responses": ["Please find the details: 1: Custodial Roth IRA. If your child has earned income from a part-time job, they may qualify for a custodial Roth IRA 2:529 Education Savings Plans 3: Coverdell Education Savings Accounts 4: UGMA/UTMA Custodial Accounts. 5: Brokerage Account. ** Please visit your nearest bank to open an investment account for kids. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "mergeaccount",
+            "patterns": ["can I merge different accounts","i want to merge mine and other's accounts","I want to join different accounts","I want to combine diff accounts" ],
+            "responses": ["Yes, you can merge yours and your partner/family member's accounts. To do so, you will be required to provide both yours and partner's Names, Date of Birth, Social Securiy Numbers, Address, Contact Numbers, and valid Government issued IDs. Is there anything else I can help you with?     "],
+            "context": [""]
+        },
+        {
+            "tag": "directdeporit",
+            "patterns": ["how do I set up direct deposit?","how to set up direct deposit"],
+            "responses": ["You can fill out the Direct Deposit form and submit it to your nearest bank. The Direct Deposit form can be obtained on your bank's website. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+             "tag": "venmo",
+            "patterns": ["how do I link my bank account with venmo or zelle?","i want to link my bank account with venmo","i want to link my bank account with zelle","link account with venmo","link account with zelle","can I link my bank account with venmo","can I link my bank account with zelle"],
+            "responses": ["Certainly, you need to install the QuickPay app on your phone and then sign in. It will guide you through the steps to link your account. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "overdraft",
+            "patterns": ["what's an overdraft?","what is an overdraft?","what's overdraft?"],
+            "responses": ["An Overdraft is a deficit in your bank account that was caused by drawing more money than your account holds. Is there anything else I can help you with?     "],
+            "context": [""]
+        },
+        {
+            "tag": "creditcard",
+            "patterns": ["best credit card for students","best credit card with 0 APR","what is the best credit card with 0 APR","what is the best credit card for students"],
+            "responses": ["1: Discover it® Student Cash Back: Best for rotating cash back bonus categories 2: Bank of America® Unlimited Cash Rewards Credit Card for Students: Best for intro APR offer. 3: Bank of America® Travel Rewards Credit Card for Students: Best for travel. 4: Discover it® Student Chrome: Best for gas and dining. Is there anything else I can help you with?     "],
+            "context": [""]
+        },
+        {
+            "tag": "offers",
+            "patterns": ["If I have a joint account, will all the joint account holders also be able to see my Chase Offers?"],
+            "responses": ["Yes, the offers for each card are at the account level, so all joint account holders will be able to see the offers for that account. Is there anything else I can help you with?     "],
+            "context": [""]
+        },
+        {
+            "tag": "theftlost",
+            "patterns": ["I lost my card","i misplaced my card","card is stolen","someone stole my card"],
+            "responses": ["I'm sorry that happened. Kindly call the customer care number or go the nearest location of your bank and report it. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "password",
+            "patterns": ["i forgot my password","forgot password"],
+            "responses": ["I'm sorry that happened. You can go to the home page of your bank website and select 'Login Help' and follow the instructions. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "statements",
+            "patterns": ["when will my statements get generated","when will i get my statements"],
+            "responses": ["Your bank statements will be generated monthly. If you have enrolled in paperless statements, you will be notified via e-mail. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "beneficiary",
+            "patterns": ["How to add a beneficiary"],
+            "responses": ["You will have to visit the nearest location of your bank and the staff will help you add a beneficiary to your account. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "creditscore",
+            "patterns": ["what is a credit score","what's a credit score","what is a creditscore","what's a creditscore"],
+            "responses": ["A credit score is a score which summarises the hsitorical credit information on a credit report. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "credscore",
+            "patterns": ["how to increase credit score","i want to increase my credit score"],
+            "responses": ["You can increase your credit score by following these steps: Make your bill payments on time, Set up autopay or calendar reminders, Don't open too many accounts at once, Get credit for paying monthly utility and cell phone bills on time, Request a credit report and dispute any credit report errors, Pay attention to your credit utilization rate. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "onlinebank",
+            "patterns": ["Do I get charged for online banking?"],
+            "responses": ["No, online banking is free of cost. However, there might be some costs or fees associated with it. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "onlinebankk",
+            "patterns": ["Can I check my bank details online without logging in?"],
+            "responses": ["No, for security reasons, you must log into your bank's website to check your bank details or perform transactions. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "atm",
+            "patterns": ["Will I be charged for using the ATM?"],
+            "responses": ["No, there are no charges for using ATMs in general but it may vary from bank to bank with conditions applied. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "atmm",
+            "patterns": ["will I be charged for ATM withdrawal?"],
+            "responses": ["No, most banks do not charge you for withdrawing cash from the ATMs in general but it may vary from bank to bank with conditions applied. Is there anything else I can help you with?    "],
+            "context": [""]
+        },
+        {
+            "tag": "personaldetails",
+            "patterns": ["can i change my personal details online"],
+            "responses": ["Certainly! You can change your contact information like phone number, address, e-mail id, etc. by logging into your bank website or app and then checking your profile. in general but it may vary from bank to bank with conditions applied. Is there anything else I can help you with?    "],
+            "context": [""]
+        }
+    ]
+}
+    
